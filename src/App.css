@@ -1,0 +1,11 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.APP {
+  position: relative;
+  height: 100vh;
+  width: 1200px;
+  overflow: hidden;
+}

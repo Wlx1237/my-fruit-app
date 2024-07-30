@@ -1,0 +1,12 @@
+.game-over-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-over-screen button {
+    padding: 10px 20px;
+    font-size: 18px;
+}

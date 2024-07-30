@@ -1,0 +1,67 @@
+.shape {
+    position: absolute;
+    /* 确保方块可以被定位 */
+    width: 50px;
+    /* 设置一个固定的宽度和高度 */
+    height: 50px;
+}
+
+.square {
+    background-color: red;
+
+}
+
+.circle {
+    border-radius: 50%;
+    /* 圆形 */
+    background-color: blue;
+
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid green;
+
+}
+
+.hexagon {
+    width: 50px;
+    height: 50px;
+    background: #FF5733;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/* 动画的定义 */
+@keyframes drop {
+    from {
+        transform: translateY(-100vh);
+    }
+
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* 动态类来调整动画速度 */
+.speed-1 {
+    animation: drop 5s linear infinite;
+    /* 速度1 */
+}
+
+.speed-1-25 {
+    animation: drop 4s linear infinite;
+    /* 速度1.25 */
+}
+
+.speed-1-5 {
+    animation: drop 3.33s linear infinite;
+    /* 速度1.5 */
+}
+
+.speed-1-75 {
+    animation: drop 2.86s linear infinite;
+    /* 速度1.75 */
+}
